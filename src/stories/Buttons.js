@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withReadme } from 'storybook-readme';
 import { withKnobs, boolean, select } from '@storybook/addon-knobs';
-import { Button, ButtonGroup } from '../ui/elements';
+import { Button, ButtonGroup } from '../../elements';
 import { Container } from '../ui/layout';
 
 import ButtonReadme from '../docs/Button.md';

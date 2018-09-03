@@ -1,8 +1,8 @@
 {
   "name": "respectre",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "React components using spectre.css",
-  "main": "/dist",
+  "main": "",
   "scripts": {
     "build": "node_modules/.bin/webpack",
     "storybook": "start-storybook -p 9001 -c .storybook",

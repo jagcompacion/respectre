@@ -8,8 +8,9 @@ module.exports = {
     layout: './src/ui/layout',
   },
   output: {
-    path: __dirname + '/dist',
+    path: __dirname,
     filename: '[name].js',
+    libraryTarget: 'commonjs',
   },
   module: {
     rules: [
@@ -22,7 +23,4 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new UglifyJsPlugin({ minimize: true }),
-  ],
 };
