@@ -1,6 +1,6 @@
 # Respectre
 
-Stateless React Components for spectre.css.
+Stateless React Components for spectre.css. https://respectre.netlify.com/
 
 ## Getting Started
 
