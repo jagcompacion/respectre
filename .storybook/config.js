@@ -2,8 +2,8 @@ import { configure } from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
 
 setOptions({
-  name: 'Spectre',
-  url: 'https://github.com/jagcompacion/spectre',
+  name: 'Respectre',
+  url: 'https://github.com/jagcompacion/respectre',
   goFullScreen: false,
   showLeftPanel: true,
   showDownPanel: true,

@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Button } from 'respectre/elements';
+import { Button } from '../../elements';
 
 describe('Button', () => {
   it('should render children', () => {

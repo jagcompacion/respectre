@@ -1,4 +1,6 @@
-# Button
+# ButtonGroup
+
+<!-- STORY -->
 
 ### Usage
 
@@ -11,7 +13,6 @@ import { ButtonGroup } from 'respectre/components';
 | propName | propType | defaultValue | isRequired |
 | -------- | -------- | ------------ | ---------- |
 | className | string  | -            | -          |
-| onClick  | func     | -            |            |
 | color    | string   | -            | -          |
 | size     | string   | -            | -          |
 | block    | boolean  | false        | -          |
@@ -29,6 +30,22 @@ import { Button, ButtonGroup } from 'respectre/elements';
 render() {
   return (
     <ButtonGroup>
+      <Button onClick={this.handleClick}>Button1</Button>
+      <Button onClick={this.handleClick}>Button2</Button>
+      <Button onClick={this.handleClick}>Button3</Button>
+    </ButtonGroup>
+  );
+}
+```
+
+#### Block
+
+```js
+import { Button, ButtonGroup } from 'respectre/elements';
+
+render() {
+  return (
+    <ButtonGroup block>
       <Button onClick={this.handleClick}>Button1</Button>
       <Button onClick={this.handleClick}>Button2</Button>
       <Button onClick={this.handleClick}>Button3</Button>
@@ -62,6 +79,54 @@ render() {
   return (
     <ButtonGroup>
       <Button color="lg">Button1</Button>
+      <Button color="lg">Button2</Button>
+      <Button color="lg">Button3</Button>
+    </ButtonGroup>
+  );
+}
+```
+
+#### Active
+
+```js
+import { Button, ButtonGroup } from 'respectre/elements';
+
+render() {
+  return (
+    <ButtonGroup>
+      <Button color="lg" active>Button1</Button>
+      <Button color="lg">Button2</Button>
+      <Button color="lg">Button3</Button>
+    </ButtonGroup>
+  );
+}
+```
+
+#### Loading
+
+```js
+import { Button, ButtonGroup } from 'respectre/elements';
+
+render() {
+  return (
+    <ButtonGroup>
+      <Button color="lg" loading>Button1</Button>
+      <Button color="lg">Button2</Button>
+      <Button color="lg">Button3</Button>
+    </ButtonGroup>
+  );
+}
+```
+
+#### Disabled
+
+```js
+import { Button, ButtonGroup } from 'respectre/elements';
+
+render() {
+  return (
+    <ButtonGroup>
+      <Button color="lg" disabled>Button1</Button>
       <Button color="lg">Button2</Button>
       <Button color="lg">Button3</Button>
     </ButtonGroup>
