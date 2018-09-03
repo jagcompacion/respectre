@@ -6,6 +6,7 @@
   "scripts": {
     "build": "node_modules/.bin/webpack",
     "storybook": "start-storybook -p 9001 -c .storybook",
+    "storybook:build": "build-storybook -c .storybook",
     "test": "jest"
   },
   "jest": {

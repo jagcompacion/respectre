@@ -6,8 +6,8 @@
 # testing
 /coverage
 
-# production
-/dist
+# docs
+/storybook-static
 
 # misc
 .DS_Store

@@ -1,3 +1,4 @@
 /.storybook
 /src
+/storybook-static
 webpack.config.js
