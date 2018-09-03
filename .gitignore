@@ -21,8 +21,3 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# dist
-components.js
-elements.js
-experimentals.js
-layout.js
