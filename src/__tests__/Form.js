@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Form } from 'respectre/elements';
+import { Form } from '../../elements';
 
 describe('Form', () => {
   it('should render children', () => {

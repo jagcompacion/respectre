@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { FormLabel } from 'respectre/elements';
+import { FormLabel } from '../../elements';
 
 describe('FormLabel', () => {
   it('should render children', () => {

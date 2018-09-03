@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Video } from 'respectre/elements';
+import { Video } from '../../elements';
 
 describe('Video', () => {
   it('should render children', () => {

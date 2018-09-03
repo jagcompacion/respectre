@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { InputGroupAddon } from 'respectre/elements';
+import { InputGroupAddon } from '../../elements';
 
 describe('InputGroupAddon', () => {
   it('should render children', () => {

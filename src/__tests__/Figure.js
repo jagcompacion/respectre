@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Figure } from 'respectre/elements';
+import { Figure } from '../../elements';
 
 describe('Figure', () => {
   it('should render children', () => {

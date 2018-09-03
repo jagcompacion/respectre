@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Img } from 'respectre/elements';
+import { Img } from '../../elements';
 
 describe('Img', () => {
   it('should render default class', () => {

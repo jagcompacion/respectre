@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { FormGroup } from 'respectre/elements';
+import { FormGroup } from '../../elements';
 
 describe('FormGroup', () => {
   it('should render children', () => {

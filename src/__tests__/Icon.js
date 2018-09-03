@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Icon } from 'respectre/elements';
+import { Icon } from '../../elements';
 
 describe('Icon', () => {
   it('should render form-icon class', () => {

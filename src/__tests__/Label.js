@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Label } from 'respectre/elements';
+import { Label } from '../../elements';
 
 describe('Label', () => {
   it('should render children', () => {
