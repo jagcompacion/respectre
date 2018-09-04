@@ -1,5 +1,6 @@
 /.storybook
 /src
 /storybook-static
+/.circleci
 webpack.config.js
 .babelrc
