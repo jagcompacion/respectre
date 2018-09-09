@@ -23,6 +23,7 @@ describe('Button', () => {
     expect(success.hasClass('btn-success')).toBe(true);
     expect(primary.hasClass('btn-primary')).toBe(true);
     expect(clear.hasClass('btn-clear')).toBe(true);
+    expect(link.hasClass('btn-link')).toBe(true);
   });
   it('should render buttons with sizes', () => {
     const small = shallow(<Button size="sm">Small Button</Button>);

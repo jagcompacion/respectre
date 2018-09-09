@@ -2,18 +2,27 @@ import React from 'react';
 import 'spectre.css/dist/spectre.css';
 import 'spectre.css/dist/spectre-icons.css';
 import { storiesOf } from '@storybook/react';
+import { withKnobs, select } from '@storybook/addon-knobs';
 import {
   Accordion, AccordionHeader, AccordionBody,
   Menu, MenuItem,
 } from '../ui/components';
-import { Container } from '../ui/layout';
 import { Icon } from '../ui/elements';
+import withDocsForm from './utils/withDocsForm';
+import AccordionReadme from '../docs/Accordion.md';
+
+const types = {
+  checkbox: 'checkbox',
+  radio: 'radio',
+};
 
 storiesOf('Components/ Accordions', module)
-  .add('checkbox', () => (
-    <Container className="p-2">
+  .addDecorator(withKnobs)
+  .addDecorator(withDocsForm(AccordionReadme))
+  .add('default', () => (
+    <div>
       <Accordion>
-        <AccordionHeader id="elements" type="checkbox">
+        <AccordionHeader id="elements" type={select('type', types, 'checkbox')}>
           <Icon icon="icon-arrow-right" className="mr-1" />
           Elements
         </AccordionHeader>
@@ -33,7 +42,7 @@ storiesOf('Components/ Accordions', module)
         </AccordionBody>
       </Accordion>
       <Accordion>
-        <AccordionHeader id="layout" type="checkbox">
+        <AccordionHeader id="layout" type={select('type', types, 'checkbox')}>
           <Icon icon="icon-arrow-right" className="mr-1" />
           Layout
         </AccordionHeader>
@@ -52,49 +61,6 @@ storiesOf('Components/ Accordions', module)
           </Menu>
         </AccordionBody>
       </Accordion>
-    </Container>
-  ))
-  .add('radio', () => (
-    <Container className="p-2">
-      <Accordion>
-        <AccordionHeader id="elements" type="radio">
-          <Icon icon="icon-arrow-right" className="mr-1" />
-          Elements
-        </AccordionHeader>
-        <AccordionBody>
-          <Menu nav>
-            <MenuItem>
-              <a href="/">
-                Element 1
-              </a>
-            </MenuItem>
-            <MenuItem>
-              <a href="/">
-                Element 2
-              </a>
-            </MenuItem>
-          </Menu>
-        </AccordionBody>
-      </Accordion>
-      <Accordion>
-        <AccordionHeader id="layout" type="radio">
-          <Icon icon="icon-arrow-right" className="mr-1" />
-          Layout
-        </AccordionHeader>
-        <AccordionBody>
-          <Menu nav>
-            <MenuItem>
-              <a href="/">
-                Layout 1
-              </a>
-            </MenuItem>
-            <MenuItem>
-              <a href="/">
-                Layout 2
-              </a>
-            </MenuItem>
-          </Menu>
-        </AccordionBody>
-      </Accordion>
-    </Container>
+    </div>
   ));
+
