@@ -5,11 +5,13 @@ import { storiesOf } from '@storybook/react';
 import {
   Bar, BarItem,
 } from '../ui/components';
-import { Container } from '../ui/layout';
+import withDocsCustom from './utils/withDocsCustom';
+import BarReadme from '../docs/Bar.md';
 
 storiesOf('Components/ Bars', module)
+  .addDecorator(withDocsCustom(BarReadme))
   .add('default', () => (
-    <Container className="p-2">
+    <div>
       <Bar className="mb-2">
         <BarItem
           value={25}
@@ -28,10 +30,10 @@ storiesOf('Components/ Bars', module)
           data-tooltip={`${50}%`}
         />
       </Bar>
-    </Container>
+    </div>
   ))
   .add('multibars', () => (
-    <Container className="p-2">
+    <div>
       <Bar className="mb-2">
         <BarItem
           value={25}
@@ -53,5 +55,5 @@ storiesOf('Components/ Bars', module)
           35%
         </BarItem>
       </Bar>
-    </Container>
+    </div>
   ));

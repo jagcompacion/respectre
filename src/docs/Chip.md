@@ -1,5 +1,7 @@
 # Chip
 
+<!-- STORY -->
+
 ### Usage
 
 ```js
@@ -53,7 +55,7 @@ render() {
   return (
     <Chip>
       <Avatar>
-        <img src="https://picturepan2.github.io/spectre/img/avatar-1.png" alt="..." />
+        <img src="../img/avatar1.png" />
       </Avatar>
       Yan Zhu
       <Button color="clear" onClick={action('clicked')} />

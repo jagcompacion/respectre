@@ -8,11 +8,13 @@ import {
 import {
   Button,
 } from '../ui/elements';
-import { Container } from '../ui/layout';
+import withDocsCustom from './utils/withDocsCustom';
+import BadgeReadme from '../docs/Badge.md';
 
 storiesOf('Components/ Badges', module)
+  .addDecorator(withDocsCustom(BadgeReadme))
   .add('default', () => (
-    <Container className="p-2">
+    <div>
       <Badge className="mr-2">
         Notifications
       </Badge>
@@ -25,10 +27,10 @@ storiesOf('Components/ Badges', module)
       <Badge data-badge="888" className="mr-2">
         Notifications
       </Badge>
-    </Container>
+    </div>
   ))
   .add('button', () => (
-    <Container className="p-2">
+    <div>
       <Button badge className="mr-2">
         Notifications
       </Button>
@@ -41,10 +43,10 @@ storiesOf('Components/ Badges', module)
       <Button badge data-badge="888" className="mr-2">
         Notifications
       </Button>
-    </Container>
+    </div>
   ))
   .add('avatar', () => (
-    <Container className="p-2">
+    <div>
       <Avatar size="xl" badge className="mr-2">
         <img src="https://picturepan2.github.io/spectre/img/avatar-1.png" alt="..." />
       </Avatar>
@@ -57,5 +59,5 @@ storiesOf('Components/ Badges', module)
       <Avatar size="sm" badge data-badge="888" className="mr-2">
         <img src="https://picturepan2.github.io/spectre/img/avatar-1.png" alt="..." />
       </Avatar>
-    </Container>
+    </div>
   ));

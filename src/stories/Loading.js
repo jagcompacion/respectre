@@ -5,22 +5,21 @@ import { storiesOf } from '@storybook/react';
 import { withReadme } from 'storybook-readme';
 import { withKnobs, select } from '@storybook/addon-knobs';
 import { Loading } from '../ui/components';
-import { Container } from '../ui/layout';
-
+import withDocsForm from './utils/withDocsForm';
 import LoadingReadme from '../docs/Loading.md';
 
 const sizes = {
   '': 'default',
-  lg: 'loading-lg',
+  lg: 'lg',
 };
 
 const defaultValue = '';
 
 storiesOf('Components/ Loadings', module)
   .addDecorator(withKnobs)
-  .addDecorator(withReadme(LoadingReadme))
+  .addDecorator(withDocsForm(LoadingReadme))
   .add('default', () => (
-    <Container className="p-2">
+    <div>
       <Loading size={select('size', sizes, defaultValue)} />
-    </Container>
+    </div>
   ));

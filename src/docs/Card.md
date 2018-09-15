@@ -1,5 +1,7 @@
 # Card
 
+<!-- STORY -->
+
 ### Usage
 
 ```js
@@ -77,7 +79,7 @@ render() {
   return (
     <Card>
       <CardImage>
-        <Img src="https://picturepan2.github.io/spectre/img/osx-el-capitan.jpg" alt="" />
+        <Img src="../img/image1.jpg" alt="" />
       </CardImage>
       <CardHeader>
         <CardTitle className="h5">

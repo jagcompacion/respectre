@@ -2,52 +2,53 @@ import React from 'react';
 import 'spectre.css/dist/spectre.css';
 import 'spectre.css/dist/spectre-icons.css';
 import { storiesOf } from '@storybook/react';
-import { withReadme } from 'storybook-readme';
+import { withKnobs, boolean, select } from '@storybook/addon-knobs';
 import { Divider } from '../ui/components';
-import { Container, Cols, Col } from '../ui/layout';
-
+import { Cols, Col } from '../ui/layout';
+import withDocsForm from './utils/withDocsForm';
 import DividerReadme from '../docs/Divider.md';
 
+const classes = {
+  'text-center': 'text-center',
+  'text-right': 'text-right',
+  'text-left': 'text-left',
+};
+
 storiesOf('Components/ Dividers', module)
-  .addDecorator(withReadme(DividerReadme))
+  .addDecorator(withKnobs)
+  .addDecorator(withDocsForm(DividerReadme))
   .add('default', () => (
-    <Container className="p-2">
+    <div>
       <p>
         {`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, 
         dictum in vehicula sit amet, feugiat tempus tellus.`}
       </p>
-      <Divider />
+      <Divider
+        className={select('class', classes, 'text-center')}
+        data-content={boolean('with text', false) ? 'OR' : ''}
+      />
       <p>
         {`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, 
         dictum in vehicula sit amet, feugiat tempus tellus.`}
       </p>
-    </Container>
-  ))
-  .add('with text', () => (
-    <Container className="p-2">
-      <p>
-        {`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, 
-        dictum in vehicula sit amet, feugiat tempus tellus.`}
-      </p>
-      <Divider data-content="OR" className="text-center" />
-      <p>
-        {`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, 
-        dictum in vehicula sit amet, feugiat tempus tellus.`}
-      </p>
-    </Container>
+    </div>
   ))
   .add('vertical', () => (
-    <Container className="p-2">
+    <div>
       <Cols>
         <Col column>
           {`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, 
           dictum in vehicula sit amet, feugiat tempus tellus.`}
         </Col>
-        <Divider vertical data-content="OR" className="text-center" />
+        <Divider
+          vertical
+          className={select('class', classes, 'text-center')}
+          data-content={boolean('with text', false) ? 'OR' : ''}
+        />
         <Col column>
           {`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, 
           dictum in vehicula sit amet, feugiat tempus tellus.`}
         </Col>
       </Cols>
-    </Container>
+    </div>
   ));

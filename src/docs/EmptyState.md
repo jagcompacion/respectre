@@ -1,5 +1,7 @@
 # Empty State
 
+<!-- STORY -->
+
 ### Usage
 
 ```js
@@ -13,6 +15,32 @@ import {
 ```
 
 ### Properties
+
+#### Empty
+
+| propName  | propType | defaultValue | isRequired |
+| --------- | -------- | ------------ | ---------- |
+| className | string   | -            | -          |
+
+#### EmptyAction
+
+| propName  | propType | defaultValue | isRequired |
+| --------- | -------- | ------------ | ---------- |
+| className | string   | -            | -          |
+
+#### EmptyIcon
+
+| propName  | propType | defaultValue | isRequired |
+| --------- | -------- | ------------ | ---------- |
+| className | string   | -            | -          |
+
+#### EmptyTitle
+
+| propName  | propType | defaultValue | isRequired |
+| --------- | -------- | ------------ | ---------- |
+| className | string   | -            | -          |
+
+#### EmptySubtitle
 
 | propName  | propType | defaultValue | isRequired |
 | --------- | -------- | ------------ | ---------- |

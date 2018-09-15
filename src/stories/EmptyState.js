@@ -9,14 +9,13 @@ import {
   EmptySubtitle, EmptyTitle,
 } from '../ui/components';
 import { Button, Icon } from '../ui/elements';
-import { Container } from '../ui/layout';
-
+import withDocsForm from './utils/withDocsForm';
 import EmptyStateReadme from '../docs/EmptyState.md';
 
 storiesOf('Components/ Empty State', module)
-  .addDecorator(withReadme(EmptyStateReadme))
+  .addDecorator(withDocsForm(EmptyStateReadme))
   .add('default', () => (
-    <Container className="p-2">
+    <div>
       <Empty>
         <EmptyIcon>
           <Icon icon="icon-people" size="3x" />
@@ -33,5 +32,5 @@ storiesOf('Components/ Empty State', module)
           </Button>
         </EmptyAction>
       </Empty>
-    </Container>
+    </div>
   ));

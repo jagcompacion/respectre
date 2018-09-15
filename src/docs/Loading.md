@@ -29,7 +29,7 @@ render() {
 }
 ```
 
-#### large
+#### Size
 
 ```js
 import { Loading } from 'respectre/components';
