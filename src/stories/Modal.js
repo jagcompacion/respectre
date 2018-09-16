@@ -3,7 +3,7 @@ import 'spectre.css/dist/spectre.css';
 import 'spectre.css/dist/spectre-icons.css';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, boolean, select } from '@storybook/addon-knobs';
-import { withReadme } from 'storybook-readme';
+import withDocsForm from './utils/withDocsForm';
 import {
   Modal,
   ModalBody,
@@ -28,7 +28,7 @@ const defaultValue = '';
 
 storiesOf('Components/ Modal', module)
   .addDecorator(withKnobs)
-  .addDecorator(withReadme(ModalReadme))
+  .addDecorator(withDocsForm(ModalReadme))
   .add('default', () => (
     <Container className="p-2">
       <Modal

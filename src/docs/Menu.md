@@ -1,5 +1,7 @@
 # Menu
 
+<!-- STORY -->
+
 ### Usage
 
 ```js
@@ -27,12 +29,6 @@ import {
 | className | string   | -            | -          |
 
 #### MenuBadge
-
-| propName  | propType | defaultValue | isRequired |
-| --------- | -------- | ------------ | ---------- |
-| className | string   | -            | -          |
-
-#### Divider
 
 | propName  | propType | defaultValue | isRequired |
 | --------- | -------- | ------------ | ---------- |
@@ -157,7 +153,7 @@ import {
 import {
   FormLabel,
   Input,
-  Icon,
+  FormIcon,
 } from 'respectre/elements';
 
 render() {
@@ -166,26 +162,26 @@ render() {
       <MenuItem>
         <FormLabel type="switch">
           <Input type="checkbox" />
-          <Icon />
+          <FormIcon />
           Show notifications
         </FormLabel>
       </MenuItem>
       <MenuItem>
         <FormLabel type="checkbox">
           <Input type="checkbox" />
-          <Icon />
+          <FormIcon />
           Remove filters
         </FormLabel>
       </MenuItem>
       <MenuItem>
         <FormLabel type="radio">
           <Input type="radio" name="gender" />
-          <Icon />
+          <FormIcon />
           Male
         </FormLabel>
         <FormLabel type="radio">
           <Input type="radio" name="gender" />
-          <Icon />
+          <FormIcon />
           Female
         </FormLabel>
       </MenuItem>

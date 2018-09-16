@@ -1,11 +1,15 @@
 # Pagination
 
+<!-- STORY -->
+
 ### Usage
 
 ```js
 import {
   Pagination,
   PageItem,
+  PageItemSubtitle,
+  PageItemTitle,
 } from 'respectre/components';
 ```
 
@@ -25,6 +29,18 @@ import {
 | active    | boolean  | false        | -          |
 | disabled  | boolean  | false        | -          |
 | type      | string   | -            | -          |
+
+#### PageItemTitle
+
+| propName  | propType | defaultValue | isRequired |
+| --------- | -------- | ------------ | ---------- |
+| className | string   | -            | -          |
+
+#### PageItemSubtitle
+
+| propName  | propType | defaultValue | isRequired |
+| --------- | -------- | ------------ | ---------- |
+| className | string   | -            | -          |
 
 ### Roadmap
 
@@ -47,33 +63,6 @@ render() {
       <PaginationItem active={true/false}>
         <a href="/">
           Layout
-        </a>
-        <Pagination>
-          <PaginationItem>
-            <a href="/">
-              Flexbox grid
-            </a>
-          </PaginationItem>
-          <PaginationItem>
-            <a href="/">
-              Responsive
-            </a>
-          </PaginationItem>
-          <PaginationItem>
-            <a href="/">
-              Paginationbar
-            </a>
-          </PaginationItem>
-          <PaginationItem>
-            <a href="/">
-              Empty states
-            </a>
-          </PaginationItem>
-        </Pagination>
-      </PaginationItem>
-      <PaginationItem>
-        <a href="/">
-          Components
         </a>
       </PaginationItem>
       <PaginationItem>

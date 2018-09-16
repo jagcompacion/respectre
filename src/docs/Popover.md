@@ -1,5 +1,7 @@
 # Chip
 
+<!-- STORY -->
+
 ### Usage
 
 ```js

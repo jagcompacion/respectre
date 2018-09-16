@@ -1,5 +1,7 @@
 # Step
 
+<!-- STORY -->
+
 ### Usage
 
 ```js

@@ -3,7 +3,7 @@ import 'spectre.css/dist/spectre.css';
 import 'spectre.css/dist/spectre-icons.css';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-import { withReadme } from 'storybook-readme';
+import withDocsForm from './utils/withDocsForm';
 import {
   Panel,
   PanelHeader,
@@ -28,7 +28,7 @@ import PanelReadme from '../docs/Panel.md';
 
 storiesOf('Components/ Panel', module)
   .addDecorator(withKnobs)
-  .addDecorator(withReadme(PanelReadme))
+  .addDecorator(withDocsForm(PanelReadme))
   .add('default', () => (
     <Container className="p-2">
       <Panel>

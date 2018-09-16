@@ -2,7 +2,7 @@ import React from 'react';
 import 'spectre.css/dist/spectre.css';
 import 'spectre.css/dist/spectre-icons.css';
 import { storiesOf } from '@storybook/react';
-import { withReadme } from 'storybook-readme';
+import withDocsForm from './utils/withDocsForm';
 import { withKnobs, boolean } from '@storybook/addon-knobs';
 import { Tab, TabItem, Badge } from '../ui/components';
 import { InputGroup, Input, Button } from '../ui/elements';
@@ -12,7 +12,7 @@ import TabReadme from '../docs/Tab.md';
 
 storiesOf('Components/ Tabs', module)
   .addDecorator(withKnobs)
-  .addDecorator(withReadme(TabReadme))
+  .addDecorator(withDocsForm(TabReadme))
   .add('default', () => (
     <Container className="p-2">
       <Tab block={boolean('block', true)}>

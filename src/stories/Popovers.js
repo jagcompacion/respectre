@@ -3,7 +3,7 @@ import 'spectre.css/dist/spectre.css';
 import 'spectre.css/dist/spectre-icons.css';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, select } from '@storybook/addon-knobs';
-import { withReadme } from 'storybook-readme';
+import withDocsForm from './utils/withDocsForm';
 import {
   Popover,
   PopoverContainer,
@@ -37,7 +37,7 @@ const style = {
 
 storiesOf('Components/ Popovers', module)
   .addDecorator(withKnobs)
-  .addDecorator(withReadme(PopoverReadme))
+  .addDecorator(withDocsForm(PopoverReadme))
   .add('default', () => (
     <Container className="p-2" style={style}>
       <Popover position={select('position', positions, defaultValue)}>

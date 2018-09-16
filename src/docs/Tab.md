@@ -1,5 +1,7 @@
 # Tab
 
+<!-- STORY -->
+
 ### Usage
 
 ```js

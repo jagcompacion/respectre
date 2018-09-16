@@ -1,5 +1,7 @@
 # Panel
 
+<!-- STORY -->
+
 ### Usage
 
 ```js
@@ -82,7 +84,7 @@ render() {
     <Panel>
       <PanelHeader className="text-center">
         <Avatar size="lg">
-          <img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="..." />
+          <img src="../img/avatar-2.png" alt="..." />
         </Avatar>
         <PanelTitle className="h5">
           Bruce Banner

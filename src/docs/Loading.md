@@ -1,5 +1,7 @@
 # Loading
 
+<!-- STORY -->
+
 ### Usage
 
 ```js

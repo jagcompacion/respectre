@@ -3,14 +3,14 @@ import 'spectre.css/dist/spectre.css';
 import 'spectre.css/dist/spectre-icons.css';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, boolean } from '@storybook/addon-knobs';
-import { withReadme } from 'storybook-readme';
+import withDocsForm from './utils/withDocsForm';
 import {
   Menu, MenuItem, Divider,
   MenuBadge,
 } from '../ui/components';
 import {
   Label, FormLabel, Input,
-  Icon,
+  FormIcon,
 } from '../ui/elements';
 import { Container } from '../ui/layout';
 
@@ -18,7 +18,7 @@ import MenuReadme from '../docs/Menu.md';
 
 storiesOf('Components/ Menu', module)
   .addDecorator(withKnobs)
-  .addDecorator(withReadme(MenuReadme))
+  .addDecorator(withDocsForm(MenuReadme))
   .add('default', () => (
     <Container className="p-2">
       <Menu
@@ -80,26 +80,26 @@ storiesOf('Components/ Menu', module)
         <MenuItem>
           <FormLabel type="switch">
             <Input type="checkbox" />
-            <Icon />
+            <FormIcon />
             Show notifications
           </FormLabel>
         </MenuItem>
         <MenuItem>
           <FormLabel type="checkbox">
             <Input type="checkbox" />
-            <Icon />
+            <FormIcon />
             Remove filters
           </FormLabel>
         </MenuItem>
         <MenuItem>
           <FormLabel type="radio">
             <Input type="radio" name="gender" />
-            <Icon />
+            <FormIcon />
             Male
           </FormLabel>
           <FormLabel type="radio">
             <Input type="radio" name="gender" />
-            <Icon />
+            <FormIcon />
             Female
           </FormLabel>
         </MenuItem>

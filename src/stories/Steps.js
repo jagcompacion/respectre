@@ -2,14 +2,14 @@ import React from 'react';
 import 'spectre.css/dist/spectre.css';
 import 'spectre.css/dist/spectre-icons.css';
 import { storiesOf } from '@storybook/react';
-import { withReadme } from 'storybook-readme';
+import withDocsForm from './utils/withDocsForm';
 import { Step, StepItem } from '../ui/components';
 import { Container } from '../ui/layout';
 
 import StepReadme from '../docs/Step.md';
 
 storiesOf('Components/ Steps', module)
-  .addDecorator(withReadme(StepReadme))
+  .addDecorator(withDocsForm(StepReadme))
   .add('default', () => (
     <Container className="p-2">
       <Step>

@@ -4,8 +4,11 @@ import 'spectre.css/dist/spectre-icons.css';
 import { storiesOf } from '@storybook/react';
 import { Navbar, NavbarSection, NavbarBrand } from '../ui/components';
 import { Button, InputGroup, Input } from '../ui/elements';
+import withDocsForm from './utils/withDocsForm';
+import NavbarReadme from '../docs/Navbar.md';
 
 storiesOf('Components/ Navbar', module)
+  .addDecorator(withDocsForm(NavbarReadme))
   .add('default', () => (
     <Navbar className="p-2">
       <NavbarSection>

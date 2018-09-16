@@ -3,7 +3,7 @@ import 'spectre.css/dist/spectre.css';
 import 'spectre.css/dist/spectre-icons.css';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, boolean, select } from '@storybook/addon-knobs';
-import { withReadme } from 'storybook-readme';
+import withDocsForm from './utils/withDocsForm';
 import {
   Pagination,
   PageItem,
@@ -21,7 +21,7 @@ const types = {
 
 storiesOf('Components/ Pagination', module)
   .addDecorator(withKnobs)
-  .addDecorator(withReadme(PaginationReadme))
+  .addDecorator(withDocsForm(PaginationReadme))
   .add('default', () => (
     <Container className="p-2">
       <Pagination>

@@ -1,5 +1,7 @@
 # Toast
 
+<!-- STORY -->
+
 ### Usage
 
 ```js

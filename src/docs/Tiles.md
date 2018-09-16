@@ -1,5 +1,7 @@
 # Tiles
 
+<!-- STORY -->
+
 ### Usage
 
 ```js
@@ -74,7 +76,7 @@ render() {
     <Tile>
       <TileIcon>
         <Avatar size="lg">
-          <img src="https://picturepan2.github.io/spectre/img/avatar-3.png" alt="Avatar" />
+          <img src="../img/avatar-3.png" alt="Avatar" />
         </Avatar>
       </TileIcon>
       <TileContent>
@@ -82,8 +84,7 @@ render() {
           The Avengers
         </TileTitle>
         <TileSubtitle className="text-gray" tag="p">
-          {`Earth's Mightiest Heroes joined forces to take on threats
-          that were too big for any one hero to tackle...`}
+          ...
         </TileSubtitle>
       </TileContent>
       <TileAction>
@@ -113,7 +114,7 @@ render() {
     <Tile>
       <TileIcon>
         <Avatar size="lg">
-          <img src="https://picturepan2.github.io/spectre/img/avatar-3.png" alt="Avatar" />
+          <img src="../img/avatar-3.png" alt="Avatar" />
         </Avatar>
       </TileIcon>
       <TileContent>
@@ -121,14 +122,12 @@ render() {
           The Avengers
         </TileTitle>
         <TileSubtitle className="text-gray" tag="p">
-          {`Earth's Mightiest Heroes joined forces to take on threats
-          that were too big for any one hero to tackle...`}
+          ...
         </TileSubtitle>
         <p>
           <Button size="sm" color="primary">
             Join
           </Button>
-          {' '}
           <Button size="sm">
             Contact
           </Button>

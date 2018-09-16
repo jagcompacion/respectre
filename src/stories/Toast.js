@@ -2,13 +2,13 @@ import React from 'react';
 import 'spectre.css/dist/spectre.css';
 import 'spectre.css/dist/spectre-icons.css';
 import { storiesOf } from '@storybook/react';
-import { withReadme } from 'storybook-readme';
 import { withKnobs, select } from '@storybook/addon-knobs';
+import withDocsForm from './utils/withDocsForm';
 import { Toast } from '../ui/components';
 import { Button } from '../ui/elements';
 import { Container } from '../ui/layout';
 
-import TabReadme from '../docs/Tab.md';
+import ToastReadme from '../docs/Toast.md';
 
 const colors = {
   '': 'default',
@@ -21,7 +21,7 @@ const defaultValue = '';
 
 storiesOf('Components/ Toast', module)
   .addDecorator(withKnobs)
-  .addDecorator(withReadme(TabReadme))
+  .addDecorator(withDocsForm(ToastReadme))
   .add('default', () => (
     <Container className="p-2">
       <Toast color={select('color', colors, defaultValue)}>
