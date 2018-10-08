@@ -28,7 +28,7 @@ const OffCanvasOverlay = (props) => {
   );
 
   return (
-    <a {...attributes} toggle={toggle} className={classes}>
+    <a {...attributes} onClick={toggle} className={classes}>
       {children}
     </a>
   );

@@ -37,7 +37,7 @@ const OffCanvasButton = (props) => {
       color={`btn-${color}`}
       action
       className={classes}
-      toggle={toggle}
+      onClick={toggle}
     >
       {children}
     </Button>
