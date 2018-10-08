@@ -5189,7 +5189,7 @@ var OffCanvasButton = function OffCanvasButton(props) {
       color: 'btn-' + color,
       action: true,
       className: classes,
-      toggle: toggle
+      onClick: toggle
     }),
     children
   );
@@ -5311,7 +5311,7 @@ var OffCanvasOverlay = function OffCanvasOverlay(props) {
 
   return _react2.default.createElement(
     'a',
-    _extends({}, attributes, { toggle: toggle, className: classes }),
+    _extends({}, attributes, { onClick: toggle, className: classes }),
     children
   );
 };
